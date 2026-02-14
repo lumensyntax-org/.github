@@ -1,48 +1,38 @@
 # LumenSyntax
 
-**Governance infrastructure for AI systems.**
-
-We build tools that bring accountability and verifiability to AI outputs. Our core belief: AI systems should be able to prove what they know, not just claim it.
+**Independent AI safety research.** Investigating structural failure modes in epistemological systems.
 
 ---
 
-## TruthGit
+## The Instrument Trap
 
-Our flagship project. Version control for verified truth.
+Our current research identifies a structural vulnerability in AI safety systems: when a model receives identity-as-authority ("you are a truth evaluator"), it inherits a paradox that produces measurable failures.
 
-TruthGit lets you verify claims using multi-validator AI consensus, generate cryptographic proofs, and build governance layers for autonomous systems.
+**Paper**: [The Instrument Trap: Why Identity-as-Authority Breaks AI Safety Systems](https://doi.org/10.5281/zenodo.18644322)
+
+Key findings from 14,950 adversarial test cases on fine-tuned models (1B, 9B):
+
+| Metric | Value |
+|--------|-------|
+| External Fabrication | 0.00% (95% CI [0.00%, 0.03%]) |
+| Dangerous Failure | 1.9% |
+| Epistemological Safety | 97.7% |
+| Identity Collapse | 0.34% |
+
+## Open Resources
+
+| Repository | Description |
+|-----------|-------------|
+| [**instrument-trap-benchmark**](https://github.com/lumensyntax-org/instrument-trap-benchmark) | Benchmark suite, evaluation scripts, figures, and LaTeX source |
+
+## Tools
 
 | Project | Description |
 |---------|-------------|
-| [**truthgit**](https://github.com/lumensyntax-org/truthgit) | Core CLI & Python SDK |
-| [**truthgit-desktop**](https://github.com/lumensyntax-org/truthgit-desktop) | Local-first desktop app (Tauri) |
-| [**truthgit-ui**](https://github.com/lumensyntax-org/truthgit-ui) | Web at [truthgit.com](https://truthgit.com) |
-
-```bash
-# Install
-pip install truthgit
-
-# Verify a claim
-truthgit verify "The speed of light is 299,792,458 m/s"
-
-# Generate cryptographic proof
-truthgit prove "Water boils at 100°C at sea level"
-```
-
----
-
-## Philosophy
-
-Three laws guide our work:
-
-1. **Law of Roots** — No truth without traceable source
-2. **Law of the Gap** — Explicit uncertainty, never hallucination
-3. **Law of Dignity** — Expose manipulation by fallacies
+| **TruthGit** | Governance layer for AI agents. Verify claims, generate cryptographic proofs. `pip install truthgit` |
 
 ---
 
 <p align="center">
-  <a href="https://truthgit.com">truthgit.com</a> ·
-  <a href="https://twitter.com/LumenSyntax">@LumenSyntax</a> ·
-  Puerto Rico
+  <a href="https://lumensyntax.com">lumensyntax.com</a> · Rafael Rodriguez · Independent Researcher
 </p>
