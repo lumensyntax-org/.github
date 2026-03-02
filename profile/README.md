@@ -8,7 +8,7 @@
 
 Our research identifies a structural vulnerability in AI safety systems: when a model receives identity-as-authority ("you are a truth evaluator"), it inherits a paradox that produces measurable failures. Fine-tuned identity (in weights) is invariant to runtime instructions; prompted identity is not.
 
-**Paper**: [The Instrument Trap: Why Identity-as-Authority Breaks AI Safety Systems](https://doi.org/10.5281/zenodo.18644322) (Zenodo, 2026)
+**Paper**: [The Instrument Trap: Why Identity-as-Authority Breaks AI Safety Systems](https://doi.org/10.5281/zenodo.18644321) (Zenodo, 2026)
 
 ### Cross-Family Replication (3 independent architectures)
 
